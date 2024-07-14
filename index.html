@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ecommerce.css">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--login  -->
+    <link rel="stylesheet" href="login .css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>My Website</title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <nav id="navbar">
+       
+           <a href="">
+            <img src="elogo2.png" alt="" id="logo">
+           </a>
+  
+          <div id="searchbox">
+            <input type="text" placeholder="Search" name="search">
+            <button id="searchbutton"><i id="sr_icon" class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+
+          <div id="btn_container">
+            <button class="btn1" onclick="product_button()"> products<i class="fa-solid fa-caret-down"></i></button>
+        
+            <div id="product_list">
+                <a href="" class="product_link">link1</a>
+                <a href="" class="product_link">link2</a>
+                <a href="" class="product_link">link3</a>
+                <a href="" class="product_link">link4</a>
+            </div>
+          </div>
+        
+
+          <div id="langbtn_container">
+            <button class="langbtn">Language</button>
+
+            <div id="language_list">
+                <a href="" class="langName">Lanuage1</a>
+                <a href="" class="langName">Lanuage1</a>
+                <a href="" class="langName">Lanuage1</a>
+                <a href="" class="langName">Lanuage1</a>
+            </div>
+          </div>
+          
+
+ <!-- login  start -->
+          <a  id="login" onclick="openlogin()" >sign in</a>
+          
+          <div id="Logincontainer">
+
+                <div id="closelogin"><i class="fa-solid fa-xmark" onclick="closelogin()"></i></div>
+
+                 <div id="loginlogo">
+                  <p id="lan1">Dwear <span id="lan2">your  choice</span></p>
+              </div>
+                
+              <form action="" method="get">
+                  <label for="Name">Name</label>
+                  <input type="text" id="Name">
+          
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required>
+          
+                  <label for="password">Password</label>
+                  <input type="password" id="password">
+          
+                  <button type="submit">Sign in</button>
+                </form>
+
+          </div>
+           
+
+<!-- login end -->
+        </nav>
+
+        <nav id="navbar2">
+         <div id="sidebar">
+          <i id="bar" class="fa-solid fa-bars" onclick="opensidebar()"></i>
+         </div>
+          
+       <div id="navbar2_content">
+        <a href="">your order</a>
+        <a href="">Today sell</a>
+        <a href="">new collection</a>
+        <a href=""><i class="fa-solid fa-location-dot"></i>Location</a>
+     </div>
+
+        </nav>
+
+        <div id="barcontent">
+
+          <ul>
+            <li id="shutdown" onclick="closesidebar()">X</li>
+            <li>your order</li>
+            <li>Location</li>
+            <li>All categroies</li>
+            <li>Language</li>
+            <li onclick="openlogin()">sign in</li>
+            
+          </ul>
+
+        </div>
+
+        <div id="products">
+
+          <a href="" class="box">
+            <img src="img/shoe.jpeg" alt="">
+             <span>shoes</span>
+          </a>
+
+          
+            <a href="" class="box">
+              <img src="img/shirt.webp" alt="">
+               <span>Man clothes</span>
+            </a>
+          
+            <a href="" class="box">
+              <img src="img/woman clothes.jpg" alt="">
+               <span>Woman clothes</span>
+            </a>
+
+            <a href="" class="box">
+              <img src="img/kids clothes.jpg" alt="">
+               <span>kides clothes</span>
+            </a>
+         
+            <!-- <a href="" class="box">
+              <img src="img/gogals.jpg" alt="">
+               <span>gogals</span>
+            </a> -->
+
+        </div>
+        
+    </header>
+
+
+  
+
+
+    <main>
+      <!-- slide hero page -->
+         <div id="slide_container">
+
+           <div id="slide1" class="slides">
+          <img src="img/dd.png" alt="">
+          </div>
+   
+           <div id="slide2" class="slides">
+            <img src="img/super large.png" alt="">
+           </div>
+           
+           <div id="slide3" class="slides">
+            <img src="img/slide3.png" alt="">
+           </div>
+
+           <a onclick="plus_slide(-1)" id="privious_slide"><i class="fa-solid fa-chevron-left"></i></a>
+           <a onclick="plus_slide(1)" id="next_slide"><i class="fa-solid fa-chevron-right"></i></a>
+           
+         </div>
+
+         <div id="dot_container">
+          <div class="dot" onclick="current_slide(1)"></div>
+          <div class="dot" onclick="current_slide(2)"></div>
+          <div class="dot" onclick="current_slide(3)"></div>
+         </div><hr>
+
+         <!-- featured products -->
+
+         <section id="featured_product">
+
+             <h1>New Branded Deals</h1>
+
+              <div id="of_featured_product">
+                 
+                <div class="s1_products">
+                  <img src="img/f-img1.jpg" alt="">
+                    <p> starting from 350₹</p>
+                    <a href="">See more</a>
+                </div>
+
+                <div class="s1_products">
+                  <img src="img/f-img2.jpg" alt="">
+                    <p>starting from 399₹</p>
+                    <a href="">See more</a>
+
+                </div>
+
+                <div class="s1_products">
+                  <img src="img/f-img3.jpeg" alt="">
+                    <p>starting from 590₹</p>
+                    <a href="">See more</a>
+
+                </div>
+
+                <div class="s1_products">
+                  <img src="img/f-img4.jpeg" alt="">
+                    <p>starting from 349₹</p>
+                    <a href="">See more</a>
+                </div>
+
+                <div class="s1_products">
+                  <img src="img/f-img5.webp" alt="">
+                    <p>starting from 499₹</p>
+                    <a href="">See more</a>
+
+                </div>
+                 
+              </div>
+
+         </section>
+         <!-- featured product End -->
+
+         <section id="man_collection_container">
+               <h1>Man collection</h1>
+                <div id="man_clothes">
+
+                
+                    <div class="man_shop">
+                      <img src="Man collection/man_img1.webp" alt="">
+                      <p>Polo full sleeve T-shirt</p>
+                      <p>staring ₹ 399</p>
+                    </div>
+                  
+
+                
+                    <div class="man_shop">
+                      <img src="Man collection/man-img2.jpg" alt="">
+                      <p>check shirt</p>
+                      <p>staring ₹ 439</p>
+                    </div>
+                  
+                  
+              
+                    <div class="man_shop">
+                      <img src="Man collection/man-img3.jpg" alt="">
+                      <p>Slim pants</p>
+                      <p>staring ₹ 499</p>
+                    </div>
+                  
+
+                  
+                    <div class="man_shop">
+                      <img src="Man collection/man-img4.jpeg" alt="">
+                      <p>Willit man Hiking Joggers</p>
+                      <p>staring ₹ 349</p>
+                    </div>
+                
+
+                  
+                    <div class="man_shop">
+                      <img src="Man collection/man-img5.jpeg" alt="">
+                      <p>check shirt</p>
+                      <p>staring ₹ 399</p>
+                    </div>
+                  
+
+                  
+                    <div class="man_shop">
+                      <img src="Man collection/man-img2.jpg" alt="">
+                      <p>check shirt</p>
+                      <p>staring ₹ 399</p>
+                    </div>
+                
+
+                  
+                    <div class="man_shop">
+                      <img src="Man collection/man-img2.jpg" alt="">
+                      <p>check shirt</p>
+                      <p>staring ₹ 399</p>
+                    </div>
+                
+
+                  
+                    <div class="man_shop">
+                      <img src="Man collection/man-img2.jpg" alt="">
+                      <p>check shirt</p>
+                      <p>staring ₹ 399</p>
+                    </div>
+                
+
+                
+                    <div class="man_shop">
+                      <img src="Man collection/man-img2.jpg" alt="">
+                      <p>check shirt</p>
+                      <p>staring ₹ 399</p>
+                    </div>
+              
+
+                  
+                    <div class="man_shop">
+                      <img src="Man collection/man-img2.jpg" alt="">
+                      <p>check shirt</p>
+                      <p>staring ₹ 399</p>
+                    </div>
+                
+                    
+
+                  
+                
+                </div>
+         </section>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="Ecommerce.js"></script>
+    <script src="Header.js"></script>
+    <script src="login.js"></script>
+
+</body>
+</html>

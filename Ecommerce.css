@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo Narrow", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+#slide_container{
+    max-width: 100vw;
+   max-height: 270px;
+   position: relative;
+   margin-top: 5px;
+}
+
+
+#slide1{
+  display: block;
+}
+
+.slides{
+    display: none;
+}
+
+.slides>img{
+
+    width:100%;
+    max-height: 250px;
+    object-fit: contain;
+    
+}
+
+#dot_container{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.dot{
+    height:15px;
+    width: 15px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-left: 13px;
+transition: all 1s ease-in-out;
+
+}
+
+.active,.dot:hover{
+    background-color:rgb(196, 194, 194);
+}
+
+
+#privious_slide,#next_slide{
+    position: absolute;
+    font-size: 2.3rem;
+    width: auto;
+    top: 40%;
+    cursor: pointer;
+    background-color: rgb(252, 247, 247);
+    border-radius:  0 3px 3px 0;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+}
+#next_slide{
+    right: 0;
+}
+
+#privious_slide:hover,#next_slide:hover{
+background-color :rgb(224, 238, 238);
+
+}
+
+#privious_slide:active,#next_slide:active{
+background-color :rgb(210, 244, 255);
+}
+
+
+/* featured products*************************************** */
+
+#featured_product>h1{
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: x-large;
+    padding: 7px;
+
+}
+
+#of_featured_product
+{ 
+    
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+     padding: 10px;
+}
+       
+.s1_products{
+     width: 250px;
+    max-height: 248px;
+    text-align: center;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+    box-shadow: 2px 2px 2px 2px rgb(224, 238, 238);
+
+}
+
+.s1_products:hover{
+    transform: translateY(-10px);
+}
+
+.s1_products>a{
+    font-family: "Archivo Narrow", sans-serif;
+    padding: 5px;
+    font-size: 1.1rem;
+     text-decoration: none;
+     /* background-color: blue; */
+     border-radius: 5px;
+     color: white;
+}
+
+.s1_products>p{
+    font-size: large;
+    padding: 5px;
+    font-family: "Archivo Narrow", sans-serif;
+
+}
+
+
+.s1_products>img{
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+
+/* Man collection */
+
+#man_collection_container{
+    /* border: 2px solid blue; */
+    display: block;
+}
+
+#man_clothes{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.man_shop{
+    width: 250px;
+    height: 248px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(224, 238, 238);
+
+}
+
+.man_shop>img{
+    height: 60%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:890px) {
+    #privious_slide,#next_slide{
+        display: none;
+    }
+    .s1_products{
+        width: 100px;
+        min-height: 100px;
+        max-height: 130px;
+        }
+
+        .s1_products>p, .s1_products>a{
+            font-size: .7rem;
+        }
+        
+        .man_shop{
+            width: 100px;
+            min-height: 100px;
+            max-height: 130px;
+            font-size: .7rem;
+            }
+    
+    
+
+    
+}
+
+@media screen and (max-width:1116px) {
+    
+        .s1_products{
+        flex-grow: 1;
+         margin: 4px;
+        }
+    
+        .man_shop{
+            flex-grow: 1;
+        }
+   
+}
+
